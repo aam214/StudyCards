@@ -1,3 +1,4 @@
+
 header{
   background-image: url("header.png");
   max-width: 1800px;
@@ -10,4 +11,31 @@ margin-top: 20px;
 display: block;
 margin: 0 auto;
 margin-top: 20px;
+}
+
+.section{
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  margin-top: 20px;
+  font-weight: 400;
+  padding: 50px;
+  max-width: 500px;
+  margin: 0 auto;
+  display: block;
+  font-style: normal;
+  text-align: center;
+  border: 3px solid black;
+  border-radius: 8px;
+}
+.card-button{
+  display: flex;
+  margin-top: 20px;
+  margin-left:20px;
+}
+button{
+  padding: 15px;
+  border: none;
+cursor: pointer;
+
+background-color: rgb(197, 186, 207);
 }
