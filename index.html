@@ -10,9 +10,25 @@
 </head>
 <body>
  <header>
-
  </header>
-
+ <div class="button-section">
+<button  onclick="addCard()">New Card</button>
+<button  onclick="removeCards()">Remove Cards</button>
+ </div>
+ <div class="section">
+<div class="create">
+<h2 class="text-center mt-5">Create A New Card</h2>
+<label for="question">Question</label>
+<textarea id="question"></textarea>
+</br>
+<label for="answer">Answer</label>
+<textarea id="answer"></textarea>
+<button class="btn btn-success" onclick="addCard()">
+  Add
+</button>
+<button class="btn btn-danger" onclick="exitCard()">Exit</button>
+</div>
+</div>
   <script src="main.js"></script>
 </body>
 </html>
