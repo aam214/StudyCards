@@ -1,31 +1,33 @@
-header{
-background-image: url("header.png");
-max-width: 1800px;
-background-size: cover;
-background-position: center;
-background-repeat: none;
-text-align: center;
-padding: 100px 100px 90px 0;
-margin-top: 20px;
-display: block;
-border-radius: 8px;
-margin: 0 auto;
-margin-top: 10px;
+.main{
+  background-color:#44001A;
 }
+
+  header{
+    background-image: url("header.png");
+    max-width: 1800px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+    text-align: center;
+    padding: 100px 100px 90px 0;
+    margin-top: 20px;
+    display: block;
+    border-radius: 8px;
+    margin: 0 auto;
+    margin-top: 8px;
+    }
 section{
   font-family: "Roboto Slab", serif;
-  font-optical-sizing: auto;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
   margin-top: 100px;
   font-weight: 400;
   padding: 50px;
-  background-color:#f3f5f7;
+  background-color:#EDE4DB;
   max-width: 500px;
   margin: 0 auto;
   display: block;
-  font-style: normal;
   text-align: center;
-  border: 3px solid black;
+  border: 3px solid rgb(61, 61, 61);
   border-radius: 8px;
 }
 label{
@@ -50,9 +52,10 @@ button{
   display: flex;
   margin-top: 20px;
 justify-content: center;
+
 }
 .add-card{
-background-color: rgba(91, 179, 106, 0.418);
+background-color:#ABC798;
 border-radius: 10px;
 margin-left: 30px;
 }
@@ -60,5 +63,4 @@ margin-left: 30px;
   background-color: rgb(197, 54, 54);
   border-radius: 10px;
   margin-left: 15px;
-
 }
