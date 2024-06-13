@@ -10,3 +10,11 @@ localStorage.clear();
 studycards.innerHTML = '';
 cardsArray = [];
 }
+
+function exitCreateCard(){
+  createBox.style.display = "none";
+}
+
+function goToCreate(){
+  createBox.style.display = "block";
+}
