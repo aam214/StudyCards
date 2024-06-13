@@ -1,24 +1,25 @@
-
 header{
-  background-image: url("header.png");
-  max-width: 1800px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: none;
-  text-align: center;
-  padding: 90px 90px 90px 0;
+background-image: url("header.png");
+max-width: 1800px;
+background-size: cover;
+background-position: center;
+background-repeat: none;
+text-align: center;
+padding: 100px 100px 90px 0;
 margin-top: 20px;
 display: block;
+border-radius: 8px;
 margin: 0 auto;
-margin-top: 20px;
+margin-top: 10px;
 }
-
-.section{
+section{
   font-family: "Roboto Slab", serif;
   font-optical-sizing: auto;
-  margin-top: 20px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  margin-top: 100px;
   font-weight: 400;
   padding: 50px;
+  background-color:#f3f5f7;
   max-width: 500px;
   margin: 0 auto;
   display: block;
@@ -27,15 +28,37 @@ margin-top: 20px;
   border: 3px solid black;
   border-radius: 8px;
 }
+label{
+  font-size: 20px;
+}
+.qanda{
+  display: flex;
+flex-direction: column;
+}
+button{
+  padding: 15px 32px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  margin-bottom: 100px;
+  margin: 50px;
+  cursor: pointer;
+  }
+  button:hover{
+  background-color: rgb(220, 228, 233);
+    }
 .card-button{
   display: flex;
   margin-top: 20px;
-  margin-left:20px;
+justify-content: center;
 }
-button{
-  padding: 15px;
-  border: none;
-cursor: pointer;
+.add-card{
+background-color: rgba(91, 179, 106, 0.418);
+border-radius: 10px;
+margin-left: 30px;
+}
+.exit-card{
+  background-color: rgb(197, 54, 54);
+  border-radius: 10px;
+  margin-left: 15px;
 
-background-color: rgb(197, 186, 207);
 }
