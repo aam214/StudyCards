@@ -39,6 +39,7 @@ flex-direction: column;
 }
 button{
   padding: 15px 32px;
+  font-family: "Roboto Slab", serif;
   border-radius: 10px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
   margin-bottom: 100px;
@@ -46,11 +47,11 @@ button{
   cursor: pointer;
   }
   button:hover{
-  background-color: rgb(220, 228, 233);
+opacity: 0.8;
     }
 .card-button{
-  display: flex;
-  margin-top: 20px;
+display: flex;
+margin-top: 20px;
 justify-content: center;
 
 }
