@@ -5,6 +5,13 @@ const answer =document.getElementById("answer");
 
 let cardsArray = localStorage.getItem('items') ? JSON.parse(localStorage.getItem('items')) : [];
 
+cardsArray.forEach(studyCardMaker);
+function studyCardMaker(text){
+  let div = document.createElement("div");
+  let h3_question = document.createElement('h3');
+  let h3_answer = document.createElement('h3');
+}
+
 function addCard(){
 let cardInformation = {
   'my-question' : question.value,
@@ -12,7 +19,7 @@ let cardInformation = {
 }
 cardsArray.push(cardInformation);
 localStorage.setItem('items', JSON.stringify(cardsArray));
-cardMaker(cardsArray[cardsArray.length - 1]);
+studyCardMaker(cardsArray[cardsArray.length - 1]);
 question.value = '';
 answer.value = '';
 }
