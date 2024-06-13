@@ -20,7 +20,7 @@ section{
   font-family: "Roboto Slab", serif;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
   margin-top: 100px;
-  font-weight: 400;
+  font-weight: 500;
   padding: 50px;
   background-color:#EDE4DB;
   max-width: 500px;
@@ -32,6 +32,15 @@ section{
 }
 label{
   font-size: 20px;
+}
+textarea{
+text-align: center;
+color: #44001A;
+padding: 10px;
+border: 2px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+
 }
 .qanda{
   display: flex;
@@ -58,10 +67,10 @@ justify-content: center;
 .add-card{
 background-color:#ABC798;
 border-radius: 10px;
-margin-left: 30px;
+
 }
 .exit-card{
   background-color: rgb(197, 54, 54);
   border-radius: 10px;
-  margin-left: 15px;
+  margin-left: 12px;
 }
