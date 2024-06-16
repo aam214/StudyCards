@@ -100,13 +100,15 @@ grid-template-columns: 2fr 2fr 2fr 2fr;
 @media(max-width:960px){
   header{
     max-width: 900px;
+    margin: 10px;
     padding:80px 80px 70px 0;
     margin-top: 10px;
     display: block;
   }
   section{
-    max-width: 440px;
+    max-width: 400px;
     max-height: 390px;
+    margin: 10px;
   }
   .title-box{
     font-size: 24px;
@@ -127,7 +129,7 @@ grid-template-columns: 2fr 2fr 2fr 2fr;
       padding: 2px;
     }
     #studycards{
-      grid-template-columns: 2fr 2fr;
-      padding-left: 12px;
+      grid-template-columns: 1fr;
+      margin: 10px;
     }
 }
