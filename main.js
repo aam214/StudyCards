@@ -1,60 +1,59 @@
-const studycards = document.getElementsByClassName("studycards")[0];
+const studycards= document.getElementsByClassName("studycards")[0];
 const createBox = document.getElementsByClassName("create-box")[0];
+
 const question = document.getElementById("question");
 const answer = document.getElementById("answer");
+let cardsArray = localStorage.getItem('items')?
+JSON.parse(localStorage.getItem('items')) : [];
 
-var cardsArray = localStorage.getItem('items') ? JSON.parse(localStorage.getItem('items')) : [];
+cardsArray.forEach(studycardMaker);
 
-cardsArray.forEach(studyCardMaker);
+function studycardMaker(text){
+const div = document.createElement("div");
+const question = document.createElement('h2');
+const answer = document.createElement('h3');
+div.className = 'studycards';
 
-function studyCardMaker(text){
-  const div = document.createElement('div');
-  const h3_question = document.createElement('h3');
-  const h2_answer = document.createElement('h2');
-  div.className = 'studycards';
+question.setAttribute('style', "border-top:4px solid red; padding: 20px; margin-top: 40px")
+question.innerHTML = text.question_input;
 
+answer.setAttribute('style', "text-align-center; display: none; color: pink");
+answer.innerHTML = text.answer_input;
 
-  h3_question.setAttribute("style", "padding: 25px 38px");
-  h3_question.textContent = text.my_question;
+div.appendChild(question);
+div.appendChild(answer);
 
-  h2_answer.setAttribute("style", "text-align:center; display:none; color: red");
-  h2_answer.textContent = text.my_answer;
-
-div.appendChild(h3_question);
-div.appendChild(h2_answer);
-
-div.addEventListener("click", ()=> {
-  if (h2_answer.style.display == "none")
-    h2_answer.style.display = "block";
+div.addEventListener('click', function(){
+  if (answer.style.display == 'none')
+    answer.style.display = 'block';
   else
-  h2_answer.style.display= "none";
-});
+  answer.style.display = 'none';
+})
 studycards.appendChild(div);
 }
 
-function addCard(){
-let cardInformation = {
-  'my_question' : question.value,
-  'my_answer' : answer.value,
-}
-cardsArray.push(cardInformation);
-localStorage.setItem('items', JSON.stringify(cardsArray));
-studyCardMaker(cardsArray[cardsArray.length - 1]);
-question.value = '';
-answer.value = '';
+const addCard = () =>{
+  let studycardInformation = {
+    'question_input' : question.value,
+    'answer_input' : answer.value,
+  }
+  cardsArray.push(studycardInformation);
+  localStorage.setItem('items', JSON.stringify(cardsArray));
+  studycardMaker(cardsArray[cardsArray.length-1])
+  question.value = '';
+  answer.value = '';
 }
 
-
-function resetCards(){
+const resetCards= () =>{
 localStorage.clear();
 studycards.innerHTML = '';
 cardsArray = [];
 }
 
-function exitCreateCard(){
-  createBox.style.display = "none";
+const goToCreate =() =>{
+createBox.style.display ="block";
 }
 
-function goToCreate(){
-  createBox.style.display = "block";
+const exitCreateBox= () =>{
+  createBox.style.display = "none";
 }
