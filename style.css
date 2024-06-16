@@ -8,7 +8,6 @@
     background-size: cover;
     background-position: center;
     background-repeat: none;
-    text-align: center;
     padding: 100px 100px 90px 0;
     margin-top: 20px;
     display: block;
@@ -80,7 +79,7 @@ border-radius: 10px;
 
 #studycards{
   display: grid;
-grid-template-columns: 2fr 2fr 2fr;
+grid-template-columns: 2fr 2fr 2fr 2fr;
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
@@ -97,4 +96,38 @@ grid-template-columns: 2fr 2fr 2fr;
   cursor: pointer;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.9);
   position: relative;
+}
+@media(max-width:960px){
+  header{
+    max-width: 900px;
+    padding:80px 80px 70px 0;
+    margin-top: 10px;
+    display: block;
+  }
+  section{
+    max-width: 440px;
+    max-height: 390px;
+  }
+  .title-box{
+    font-size: 24px;
+    align-items: baseline;
+  }
+  .create-card, .reset-cards{
+    padding: 8px 15px;
+    margin-bottom: 5px;
+    }
+    .add-card,.exit-card{
+      padding: 5px 10px;
+      margin-bottom: 5px;
+    }
+    label{
+      font-size: 15px;
+    }
+    textarea{
+      padding: 2px;
+    }
+    #studycards{
+      grid-template-columns: 2fr 2fr;
+      padding-left: 12px;
+    }
 }
