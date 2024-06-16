@@ -10,14 +10,14 @@ cardsArray.forEach(studycardMaker);
 
 function studycardMaker(text){
 const studycards = document.createElement("div");
-const question = document.createElement('h2');
-const answer = document.createElement('h3');
+const question = document.createElement('h5');
+const answer = document.createElement('h5');
 studycards.className = 'studycards';
 
 question.setAttribute('style', "text-align:center; border-top:4px solid red; padding: 20px; margin-top: 40px")
 question.innerHTML = text.question_input;
 
-answer.setAttribute('style', "text-align:center; padding: 20px; display: none; color: pink");
+answer.setAttribute('style', "text-align:center; padding: 20px; display: none; color: #44001A");
 answer.innerHTML = text.answer_input;
 
 studycards.appendChild(question);

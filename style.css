@@ -22,7 +22,7 @@ section{
   margin-top: 100px;
   font-weight: 500;
   padding: 50px;
-  background-color:#EDE4DB;
+  background-color:white;
   max-width: 470px;
   margin: 0 auto;
   display: block;
@@ -46,6 +46,9 @@ font-size: 40px;
 .qanda{
   display: flex;
 flex-direction: column;
+}
+.create-card, .reset-cards{
+border-radius: 10px;
 }
 button{
   padding: 15px 32px;
