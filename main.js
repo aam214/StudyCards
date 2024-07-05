@@ -15,7 +15,7 @@ const question = document.createElement('h5');
 const answer = document.createElement('h5');
 studycards.className = 'studycards';
 
-question.setAttribute('style', "text-align:center; border-top:4px solid red; padding: 20px; margin-top: 40px")
+question.setAttribute('style', "text-align:center; padding: 20px; margin-top: 20px")
 question.innerHTML = text.question_input;
 
 answer.setAttribute('style', "text-align:center; padding: 20px; display: none; color: #44001A");
