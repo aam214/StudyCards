@@ -1,24 +1,23 @@
 .main{
-  background-color:#44001A;
+  background-color:#45171d;
 }
-
-  header{
-  background-image: url("header.png");
-  max-width: 1800px;
-  max-height: 400px;
-  text-align: center;
-  background-size: cover;
-  background-position: center;
-  background-repeat: none;
-     padding: 90px 90px 90px 90px;
+header{
+background-image: url("header.png");
+max-width: 1800px;
+max-height: 400px;
+text-align: center;
+background-size: cover;
+background-position: center;
+background-repeat: none;
+padding: 90px 90px 90px 90px;
 margin-top: 10px;
 display: block;
 border-radius: 2px;
 font-family: "Roboto Slab", serif;
-  margin: 0 auto;
+margin: 0 auto;
 margin-top: 8px;
     }
-  .title{
+.title{
 text-align: center;
 letter-spacing: 2px;
 line-height: 1.5px;
@@ -31,7 +30,7 @@ section{
   font-weight: 500;
   padding: 40px;
   background-color:white;
-  max-width: 470px;
+  max-width: 500px;
   margin: 0 auto;
   display: block;
   text-align: center;
@@ -95,7 +94,8 @@ align-items: end;
 height: 210px;
 border-radius: 4px;
 word-wrap: break-word;
-margin: 20px; 
+margin: 20px;
+
 background:#fff;
 cursor: pointer;
 box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.9);
@@ -106,7 +106,7 @@ margin-top: 10px;
 padding: 0px 10px;
 align-items: center;
 grid-template-columns: 2fr 2fr;
-margin-left:70px;
+margin-left:150px;
 flex-wrap: wrap;
     }
     @media(max-width:1030px){
@@ -140,6 +140,9 @@ flex-wrap: wrap;
   .add-card,.exit-card{
   padding: 2px 10px;
   margin-bottom: 10px;
+      }
+      #studycards{
+  margin-left: -1px;
       }
   .studycards{
   display: block;

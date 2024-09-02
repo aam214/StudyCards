@@ -1,8 +1,8 @@
 
-const createBox = document.getElementsByClassName("create-box")[0];
-
+const createBox = document.querySelector(".create-box");
 const question = document.getElementById("question");
 const answer = document.getElementById("answer");
+const studyCards = document.querySelector("#studycards");
 
 let cardsArray = localStorage.getItem('items')?
 JSON.parse(localStorage.getItem('items')) : [];
@@ -13,7 +13,7 @@ function studycardMaker(text){
 const studycards = document.createElement("div");
 const question = document.createElement('h5');
 const answer = document.createElement('h5');
-studycards.className = 'studycards';
+studycards.classList.add("studycards");
 
 question.setAttribute('style', "text-align:center; padding: 20px; margin-top: 20px")
 question.innerHTML = text.question_input;
@@ -30,7 +30,7 @@ studycards.addEventListener('click', function(){
   else
   answer.style.display = 'none';
 })
-document.querySelector("#studycards").appendChild(studycards);
+studyCards.appendChild(studycards);
 }
 
 function addCard(){
@@ -48,7 +48,7 @@ function addCard(){
 
 function resetCards(){
 localStorage.clear();
-studycards.innerHTML ='';
+studyCards.innerHTML ='';
 cardsArray = [];
 }
 
